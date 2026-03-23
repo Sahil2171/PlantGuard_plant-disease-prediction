@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Classifier — AI-Powered Leaf Diagnosis</title>
+    <meta name="description" content="Upload a photo of a plant leaf and let AI instantly identify diseases across 38 categories for 14 different plants.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Animated background blobs -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">🌿</span>
+            <span class="logo-text">PlantGuard</span>
+        </div>
+        <p class="tagline">AI-Powered Plant Disease Detection</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Hero -->
+        <section class="hero fade-in">
+            <h1>Identify Plant Diseases <span class="gradient-text">Instantly</span></h1>
+            <p class="hero-sub">Upload a photo of a plant leaf and our AI will analyze it for diseases across <strong>38 categories</strong> covering <strong>14 plant species</strong>.</p>
+        </section>
+
+        <!-- Upload Section -->
+        <section class="upload-section fade-in" style="animation-delay:.15s">
+            <div class="card glass-card upload-card">
+                <div id="dropZone" class="drop-zone">
+                    <div class="drop-zone-content" id="dropContent">
+                        <div class="upload-icon-wrapper">
+                            <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 16V4m0 0L8 8m4-4l4 4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20 16v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <p class="drop-text">Drag & drop your leaf image here</p>
+                        <p class="drop-hint">or click to browse &nbsp;·&nbsp; JPG, JPEG, PNG</p>
+                    </div>
+                    <input type="file" id="fileInput" accept=".jpg,.jpeg,.png" hidden>
+                </div>
+
+                <!-- Preview -->
+                <div id="previewArea" class="preview-area hidden">
+                    <div class="preview-image-wrapper">
+                        <img id="previewImage" alt="Leaf preview">
+                        <button id="removeBtn" class="remove-btn" title="Remove image">&times;</button>
+                    </div>
+                    <button id="classifyBtn" class="btn-classify">
+                        <span class="btn-text">Classify Disease</span>
+                        <span class="btn-loader hidden" id="btnLoader">
+                            <span class="spinner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Result Section -->
+        <section id="resultSection" class="result-section hidden">
+            <div class="card glass-card result-card">
+                <div class="result-header">
+                    <span class="result-icon" id="resultIcon">✅</span>
+                    <h2>Diagnosis Result</h2>
+                </div>
+                <div class="result-body">
+                    <div class="result-item">
+                        <span class="result-label">Plant</span>
+                        <span class="result-value" id="resultPlant">—</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Condition</span>
+                        <span class="result-value" id="resultCondition">—</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Confidence</span>
+                        <div class="confidence-bar-wrapper">
+                            <div class="confidence-bar" id="confidenceBar"></div>
+                        </div>
+                        <span class="result-value confidence-value" id="resultConfidence">—</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Supported Plants -->
+        <section class="plants-section fade-in" style="animation-delay:.3s">
+            <h2 class="section-title">Supported Plants</h2>
+            <div class="plants-grid" id="plantsGrid"></div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 PlantGuard &middot; Built with TensorFlow &amp; FastAPI</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
