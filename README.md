@@ -1,9 +1,9 @@
 ```markdown
 # 🌿 PlantGuard: Plant Disease Prediction
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-CNN-orange.svg)]()
-![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![Machine Learning](https://img.shields.io/badge/Machine%20Learning-CNN-orange.svg)]()
+[![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
 
 ## 📌 Overview
 **PlantGuard** is an automated, machine learning-based system designed to detect and predict crop diseases from leaf images. Early identification of plant diseases is critical for mitigating crop loss and ensuring agricultural sustainability. By leveraging Computer Vision and Convolutional Neural Networks (CNNs), PlantGuard provides a reliable, user-friendly tool to classify healthy and diseased plants accurately.
