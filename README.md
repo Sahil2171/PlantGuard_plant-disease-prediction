@@ -1,11 +1,8 @@
-```markdown
 # 🌿 PlantGuard: Plant Disease Prediction
 
-<p align="left">
-  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python"></a>
-  <img src="https://img.shields.io/badge/Machine%20Learning-CNN-orange.svg" alt="Machine Learning">
-  <img src="https://img.shields.io/badge/Status-Active-success.svg" alt="Status">
-</p>
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![Machine Learning](https://img.shields.io/badge/Machine%20Learning-CNN-orange.svg)]()
+[![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
 
 ## 📌 Overview
 **PlantGuard** is an automated, machine learning-based system designed to detect and predict crop diseases from leaf images. Early identification of plant diseases is critical for mitigating crop loss and ensuring agricultural sustainability. By leveraging Computer Vision and Convolutional Neural Networks (CNNs), PlantGuard provides a reliable, user-friendly tool to classify healthy and diseased plants accurately.
@@ -31,11 +28,11 @@ The model is trained on a diverse dataset of approximately 17,000 labeled images
 ## 🚀 Installation & Setup
 
 1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/Sahil2171/PlantGuard_plant-disease-prediction.git](https://github.com/Sahil2171/PlantGuard_plant-disease-prediction.git)
-   cd PlantGuard_plant-disease-prediction
-
+```bash
+git clone [https://github.com/Sahil2171/PlantGuard_plant-disease-prediction.git](https://github.com/Sahil2171/PlantGuard_plant-disease-prediction.git)
+ cd PlantGuard_plant-disease-prediction
 ```
+
 
 2. **Create a virtual environment (recommended):**
 ```bash
